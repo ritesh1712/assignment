@@ -1,0 +1,279 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-size: 115%; */
+  }
+
+/* common css */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0px;
+}
+.model{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top:0;
+  background: #00000084;
+  display: none;
+}
+.inner_model{
+  height: 80%;
+  width: 80%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.inner_model i{
+  position: relative;
+  right: -97%;
+  cursor: pointer;
+}
+
+label{
+  display: block;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.form{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form div{
+  margin: 10px;
+}
+
+.form h1{
+  padding-bottom: 30px;
+}
+
+.form div input{
+  font-size: 1.2rem;
+  padding: 2px 4px;
+}
+
+.sign_btn{
+  margin-top: 10px;
+  background-color: rgb(73, 73, 233,0.7);
+  padding: 0.25rem 5rem;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-weight: bolder;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.sign_btn:hover{
+  background-color: rgb(73, 73, 233,0.9);
+}
+
+.form p{
+  padding-top: 10px;
+}
+.form p span{
+color: blue;
+cursor: pointer;
+}
+
+  /* navbar */
+  .navbar {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 3rem;
+  }
+  
+  .navbar-logo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    padding: 0px 4px;
+  }
+  .navbar-logo a span{
+    color: rgb(97, 159, 159);
+  }
+  
+  .navbar-items {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar-items li {
+    margin-left: 25px;
+  }
+  
+  .navbar-items li{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  .navbar-items #sign_up{
+    background-color: rgb(73, 73, 233,0.7);
+    padding: 0.25rem 0.5rem;
+    color: white;
+    border-radius: 20px;
+  }
+  .navbar-items li #sign_up:hover{
+    background-color: rgb(73, 73, 233,0.9);
+  }
+  
+
+  /* hero section  */
+  .hero_section{
+    padding-top: 3rem;
+  }
+
+
+  .hero_section p {
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  #hero_section_btn{
+    margin-top: 10px;
+    background-color: rgb(73, 73, 233,0.7);
+    padding: 0.25rem 2rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #hero_section_btn:hover{
+    background-color: rgb(73, 73, 233,0.9);
+  }
+
+  .hero_section img{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /* hire section  */
+  .hire_section .filters{
+    flex-direction: row;
+    gap: 20px;
+    /* margin-top: -2rem; */
+  }
+
+  .hire_section .search_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
+  .hire_section input{
+outline: none;
+border: none;
+padding-left: 2px;
+font-size: 1.2rem;
+  } 
+  .hire_section .filters .job_role{
+font-size: 1.2rem;
+padding: 5px 5px;
+border-radius: 5px;
+  }
+
+  .hire_section .applyed_filters{
+    flex-direction: row;
+    gap: 20px;
+    margin-top: -1rem;
+  }
+
+  .hire_section .applyed_filters p{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(73, 73, 233,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .hire_section .applyed_filters p i{
+font-size: 1rem;
+cursor: pointer;
+  }
+
+  /* card section */
+.card_section{
+  padding: 1rem 3rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;  
+  justify-content: center;
+
+}
+
+.candidate-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 16rem;
+  box-shadow: 2px 4px rgb(73, 73, 233,0.4);
+}
+
+.candidate-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.candidate-details {
+  margin-left: 15px;
+}
+
+.candidate-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.candidate-role {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.candidate-experience {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.candidate-location {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.candidate-profile-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: rgb(73, 73, 233,0.7);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.candidate-profile-lin:hover{
+  background-color: rgb(73, 73, 233,0.9);
+}
+

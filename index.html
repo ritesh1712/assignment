@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar  -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <a href="#">HIR<span>ING</span></a>
+    </div>
+    <ul class="navbar-items" id="ul_btn">
+      <li id="sign_in">Sign in</li>
+      <li id="sign_up">Sign up</li>
+    </ul>
+  </nav>
+  
+    <!-- hero section  -->
+<section class="hero_section container">
+<h1>Find Your Candidates Here</h1>
+<p>Discover a vast talent pool at your fingertips. Simplify your search and connect with top-notch candidates ready to elevate your team. Unlock the power of recruitment with ease.</p>
+<a href="#hire" id="hero_section_btn">Hire</a>
+<img src="./Screenshot 2023-07-07 090717.png" alt="">
+</section>
+
+<!-- hire section  -->
+    <section id="hire" class="hire_section container">
+<h1>Hire Candidates</h1>
+<div class="container filters">
+    <label for="location">Location</label>
+        <select name="location" class="job_role" id="location">
+            <option value="none">none</option>
+        </select>
+    <label for="jobrole">Role</label>
+        <select name="job_role" class="job_role" id="jobrole">
+            <option value="none">none</option>
+        </select>
+</div>
+</section>
+
+<!-- card section  -->
+<section id="card_section" class="card_section">
+  <h4>Please Sign In to access this page</h4>  
+</section>
+    
+<!-- sign in  -->
+<div class="model container" id="sign_in_model">
+ <div class="inner_model">
+    <i class="material-icons" id="sign_in_close">close</i>
+<div class="form">
+    <h1>Sign In</h1>
+    <div>
+        <label for="email">Enter User Email</label>
+        <input name="email" id="email" type="email">
+    </div>
+    <div>
+        <label for="password">Enter User Password</label>
+        <input id="password" name="password" type="password">
+    </div>
+    <button class="sign_btn" id="sign_in_btn">Sign In</button>
+    <p>don't you have an account <span id="donot_account" >click here</span></p>
+</div>
+ </div>
+</div>
+
+<!-- sign up  -->
+<div class="model container" id="sign_up_model">
+    <div class="inner_model">
+       <i class="material-icons" id="sign_up_close">close</i>
+   <div class="form">
+       <h1>Sign Up</h1>
+       <div>
+           <label for="name">Enter User Name</label>
+           <input name="name" id="name" type="text">
+       </div>
+       <div>
+           <label for="email_up">Enter User Email</label>
+           <input name="email" id="email_up" type="email">
+       </div>
+       <div>
+           <label for="password_up">Enter User Password</label>
+           <input id="password_up" name="password" type="password">
+       </div>
+       <button class="sign_btn" id="sign_up_btn">Sign Up</button>
+       <p>do you have an account already <span id="already_account">click here</span></p>
+   </div>
+    </div>
+   </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
